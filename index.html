@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boyfriend Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hearts" id="hearts"></div>
+
+    <div class="quiz-container">
+        <div class="question">What is your boyfriend's name? 💕</div>
+
+        <div class="input-container">
+            <input type="text" class="name-input" id="nameInput" placeholder="Type his name here..." autocomplete="off">
+        </div>
+
+        <button class="submit-btn" onclick="checkAnswer()">Submit Answer</button>
+
+        <div class="success-message" id="successMessage">
+            🎉 That's right! You do love me! 🎉<br>
+            💖 I love you too! 💖
+        </div>
+
+        <div class="envelope-section" id="envelopeSection">
+            <div class="envelope" id="envelope">
+                <div class="envelope-flap"></div>
+                <div class="envelope-body">
+                    <div class="heart-seal">💕</div>
+                </div>
+            </div>
+            <button class="open-letter-btn" onclick="openLetter()">Open it babi 💌</button>
+        </div>
+
+        <div class="letter-popup" id="letterPopup">
+            <div class="letter-content">
+                <div class="letter-header">💌 For My Baby 💌</div>
+                <div class="letter-text">
+                    hi babyko, i just want to say that i'm so proud of you, but please sometimes take a rest okay? you're doing well naman po eh, i will always be your biggest fan, supporter and everything, i love you baby
+                </div>
+                <div class="letter-signature">
+                    Forever yours, <br>
+                    Rez 💕
+                </div>
+                <div class="countdown-timer" id="countdownTimer">Timer: 15s</div>
+                <div class="timer-message" id="timerMessage">
+                    bye! iloveyouuuuuuuuuuuuuuuuuuuuuu somuchhhhhhhhhhhh babi kooooooooo 💕💕💕
+                </div>
+                <div class="video-container" id="videoContainer">
+                    <video controls autoplay loop>
+                        <source src="cat-kiss.mp4" type="video/mp4">
+
+                    </video>
+                </div>
+                <button class="close-letter-btn" onclick="closeLetter()">Close Letter</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="error-popup" id="errorPopup">
+        <div class="error-content">
+            <div class="error-text">U dont love me na 😢</div>
+            <img src="https://th.bing.com/th/id/OIP.hi3Hx6o90_cYARNaMdzjewHaHa?w=500&h=500&rs=1&pid=ImgDetMain" 
+                 alt="Sad emoji" class="sad-emoji">
+            <br>
+            <button class="try-again-btn" onclick="tryAgain()">Try Again</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
